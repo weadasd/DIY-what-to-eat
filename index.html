@@ -468,6 +468,55 @@
             transform: scale(1.1);
         }
 
+        /* 响应式：移动端优化 */
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 96px;
+            }
+            .header-content {
+                padding: 12px 16px;
+            }
+            .header h1 {
+                font-size: 18px;
+            }
+            .content {
+                padding: 12px;
+            }
+            .card {
+                padding: 16px;
+            }
+            .card-header {
+                font-size: 16px;
+            }
+            .dish-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 12px;
+            }
+            .dish-image {
+                height: 160px;
+            }
+            .btn {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+            .nav-tab {
+                font-size: 11px;
+                padding: 10px 6px;
+            }
+            .modal-content {
+                max-width: 96vw;
+            }
+            .meal-dish {
+                gap: 10px;
+            }
+            .meal-dish-image {
+                width: 60px;
+                height: 60px;
+            }
+            .ingredient-item {
+                padding: 10px 8px;
+            }
+        }
         /* 空状态 */
         .empty-state {
             text-align: center;
